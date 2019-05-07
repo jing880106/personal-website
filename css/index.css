@@ -1,0 +1,307 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #75433F;
+
+}
+
+h1 {
+    padding-top: 40px;
+    text-decoration: underline;
+    color: #D1D0D1;
+    text-align: center;
+
+}
+.title{
+  font-family: junegull;
+  font-size: 60px;
+}
+@font-face {
+    font-family: junegull;
+    src: url(../eng-font/junegull.ttf);
+}
+
+hr.hr-style {
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+    height: 3px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+#header {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    -webkit-box-shadow: 0px 8px 15px #333;
+    -moz-box-shadow: 0px 8px 15px #333;
+    box-shadow: 0px 8px 15px #333;
+}
+
+#footer {
+    height: 40px;
+    width: 100%;
+    background-color: white;
+
+
+}
+
+/*font*/
+.ch-font {
+    font-family: 微軟正黑體;
+}
+
+.font-center {
+    text-align: center;
+    color: #D1D0D1;
+}
+
+/*Div*/
+.clubdiv {
+    margin-top: 60px;
+    background-color: #5B5D00;
+
+    padding: 30px;
+}
+
+.Interest-div {}
+
+.border {
+    border: solid;
+    border-width: thin;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px red;
+
+}
+
+
+
+/*img*/
+.jpg100 {
+    width: 100%;
+}
+
+.myimg {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 3px 3px 12px pink;
+    text-align: center;
+}
+
+.clubimg {
+    margin: 60px;
+    width: 70%;
+    padding: 20px;
+    box-shadow: 3px 3px 12px pink;
+    text-align: center;
+}
+
+.clubimg:hover {
+    width: 73%;
+    transition: 0.5s;
+}
+
+.myimg:hover {
+    width: 103%;
+    transition: 0.5s;
+}
+
+.edu-img {
+    width: 100%;
+    align: center;
+    padding: 40px;
+}
+
+.edu-img:hover {
+    width: 104%;
+    transition: 0.5s;
+}
+
+.Interest-img {
+    width: 300px;
+    height: 300px;
+}
+
+.P1 {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+.P2 {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+.P3 {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+.P-hover:hover {
+    width: 310px;
+    height: 310px;
+    z-index: 1;
+
+}
+
+
+/*background*/
+.hab-bg {
+    background-color: #014515;
+}
+
+.sidebarbg {
+    background-color: #2E302E;
+    color: #D1D0D1;
+    padding: 15px;
+}
+
+.bg2 {
+    background-color: #11198E;
+}
+
+.exp-bg {
+    background-color: black;
+    opacity: 0.5;
+}
+
+/*padding*/
+.pad-top {
+    padding-top: 30px;
+}
+
+.pad-left {
+    padding-left: 250px;
+}
+
+.padding {
+    padding: 30px;
+}
+
+.hide-in-phone {
+    display: none
+}
+
+@media only screen and (min-width:720px) {
+    .hide-in-phone {
+        display: block;
+    }
+}
+
+/*icon*/
+.middle {
+    position: fixed;
+    top: 5%;
+    right: 25%;
+    transform: translate(-50%;
+    -50);
+}
+
+.sm-container {
+    text-align: center;
+}
+
+.sm-container i {
+    color: #f5f6fa;
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+}
+
+.sm-container i:hover {
+    transform: scale(1.2);
+}
+
+.sm-menu {
+    background-color: #487eb0;
+    position: fixed;
+    border-radius: 8px;
+    display: none;
+    padding: 10px;
+}
+
+.sideicon {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.sidebtn {
+    border-radius: 8px;
+    font-size: 40px;
+    color: #487eb0;
+
+}
+
+.grid figure {
+    margin: 0;
+    position: relative;
+}
+
+.grid figcaption {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+
+
+}
+
+.grid2 figure {
+    margin: 0;
+    position: relative;
+}
+
+.grid2 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+/* Individual Caption Styles */
+
+/* Caption Style 1 */
+.cs-style-1 figcaption {
+    height: 125%;
+    width: 125%;
+    opacity: 0;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.cs-style-2 figcaption {
+    height: 105%;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: transform 0.3s, opacity 0.3s;
+    color: white;
+    font-family: 微軟正黑體;
+}
+
+.cs-style-1 figure:hover figcaption {
+    opacity: 0.7;
+    transform: translate(0px, 0px);
+    z-index: 1;
+}
+
+.cs-style-2 figure:hover figcaption {
+    opacity: 0.7;
+    transform: translate(0px, 0px);
+    z-index: 1;
+    padding-top: 100px;
+}
